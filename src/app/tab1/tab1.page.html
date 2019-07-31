@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="secondary">
+      Lindeed
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <br/>
+    <ion-card *ngFor="let item of items" color="medium">
+      <ion-card-content>
+        <ion-button fill="outline" expand="full" color="primary" ion-item [routerLink]="'/view/' + item.id">
+          {{item.item}}
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

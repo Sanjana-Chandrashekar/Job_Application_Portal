@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{pageTitle}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{title1}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle1}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{requirements1}}
+      <br/>
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ title1">
+        Apply
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{title2}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle2}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{requirements2}}
+      <br/>
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ title2">
+        Apply
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{title3}}</ion-card-title>
+      <ion-card-subtitle>{{subtitle3}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{requirements3}}
+      <br/>
+      <ion-button fill="outline" size="small" [routerLink]="'/form/'+ title3">
+        Apply
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

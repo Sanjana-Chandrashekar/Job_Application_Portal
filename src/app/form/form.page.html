@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Applying for {{jobID}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-input clearInput placeholder="First Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input clearInput placeholder="Last Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input clearInput placeholder="Email"></ion-input>
+  </ion-item>
+  
+  <ion-button fill="clear" size="small" >
+    Attach Resume
+  </ion-button>
+
+  <ion-button fill="outline" expand="block" (click)="submit()">
+    Submit
+  </ion-button>
+
+
+
+
+</ion-content>
